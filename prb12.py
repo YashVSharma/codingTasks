@@ -1,5 +1,5 @@
 from googlesearch import search
-import webbrowser
+import os
 import pyqrcode
 
 a=input("Enter search")
@@ -12,5 +12,6 @@ print(li)
 
 for i in range(len(li)):
   url=pyqrcode.create(li[i])
-  url.svg("qwerty%d"%i,scale=8)
-
+  url.svg("rty%d"%i,scale=8)
+  #os.system("cp qwerty%d"%i+" /var/www/html")
+  print(url.terminal())
