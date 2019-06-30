@@ -13,7 +13,7 @@ while 4>3 :
   print("message length exceded")
  else:
   if a=="ex":
-   os.system("exit()")
+   break
   else:
    s.sendto(a,(recv_ip,recv_port))
    print(s.recvfrom(100))

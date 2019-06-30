@@ -20,7 +20,7 @@ while 4>2:
   print("message very long")
  else:
   if reply=="ex":
-   s.close()
+   break
   else:
    s.sendto(reply,data[1])
 
